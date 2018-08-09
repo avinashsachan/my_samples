@@ -1,38 +1,7 @@
 #!/usr/bin/python
-from __future__ import print_function
+#from __future__ import print_function
 from datetime import timedelta
 from datetime import datetime
-from pprint import pprint
-
-
-def main():
-    st = datetime(2018, 8, 3, 13, 00, 00)
-    et = datetime(2018, 8, 5, 14, 00, 00)
-    GetDelta(st, et)
-
-    st = datetime(2018, 8, 3, 00, 00, 00)
-    et = datetime(2018, 8, 5, 14, 00, 00)
-    GetDelta(st, et)
-
-    st = datetime(2018, 8, 3, 00, 00, 00)
-    et = datetime(2018, 8, 5, 00, 00, 00)
-    GetDelta(st, et)
-
-    st = datetime(2018, 8, 3, 00, 00, 00)
-    et = datetime(2018, 8, 4, 00, 00, 00)
-    GetDelta(st, et)
-
-    st = datetime(2018, 8, 3, 00, 00, 00)
-    et = datetime(2018, 8, 3, 00, 00, 00)
-    GetDelta(st, et)
-
-    st = datetime(2018, 8, 3, 00, 00, 00)
-    et = datetime(2018, 8, 3, 1, 00, 00)
-    GetDelta(st, et)
-
-    st = datetime(2018, 8, 3, 1, 00, 00)
-    et = datetime(2018, 8, 3, 2, 00, 00)
-    GetDelta(st, et)
 
 
 def GetDelta(st, et):
@@ -57,13 +26,10 @@ def GetDelta(st, et):
         nextDate = datetime.combine(nextDay, datetime.min.time())
 
     # p1 = et.date() - st.date()
+    #print("Starting")
+    #print("ST = ", st)
+    #print("ET = ", et)
 
-    print("Starting")
-    print("ST = ", st)
-    print("ET = ", et)
-
-    pprint(dct)
+    return dct
 
 
-if __name__ == "__main__":
-    main()
