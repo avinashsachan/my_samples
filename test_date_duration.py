@@ -46,6 +46,7 @@ class TestDate_duration(TestCase):
               date(2018, 8, 4): 1440.0
               }
         self.assertDictEqual(r, r2, "Failed")
+        
 
     def test_GetDeltaOneDayRangeStartsAt00EndsAt00(self):
         st = datetime(2018, 8, 3, 00, 00, 00)
