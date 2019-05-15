@@ -8,7 +8,7 @@ class TestDate_duration(TestCase):
         st = datetime(2018, 8, 3, 1, 00, 00)
         et = datetime(2018, 8, 3, 2, 00, 00)
         r = util.GetDelta(st, et)
-        r2 = {date(2018, 8, 3): 60}
+        r2 = {date(2018, 8, 3): 61}
         self.assertDictEqual(r, r2, "Failed")
 
     def test_GetDeltaSameDayRangeStartsAt00(self):
