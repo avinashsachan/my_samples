@@ -62,3 +62,6 @@ class TestDate_duration(TestCase):
         r = util.GetDelta(st, et)
         r2 = {}
         self.assertDictEqual(r, r2, "Failed")
+
+if __name__=="__main__":
+    unittest.main()
